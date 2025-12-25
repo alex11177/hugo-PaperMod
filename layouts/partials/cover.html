@@ -19,7 +19,7 @@
         {{- $processableFormats = $processableFormats | append "webp" -}}
     {{- end -}}
 
-    {{- $imgdl := (.Params.cover.image) | absURL }}
+    {{- $imgdl := printf "https://alex11177.github.io/blog_network_cn/%s" .Params.cover.image }}
     {{- if $cover -}}
         {{- $imgdl = $cover.Permalink }}
     {{- end -}}
